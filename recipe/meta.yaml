@@ -23,7 +23,7 @@ requirements:
   host:
     - armadillo
     - cython
-    - lapack
+    - liblapack
     - nlopt
     - numpy
     - openblas
@@ -31,7 +31,7 @@ requirements:
     - python
   run:
     - armadillo
-    - lapack
+    - liblapack
     - nlopt
     - {{ pin_compatible('numpy') }}
     - openblas
