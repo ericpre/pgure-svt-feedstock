@@ -10,9 +10,10 @@ source:
   sha256: 33da930fb15f1b7e7ede00f4f04eed0159612fe089d7ef7acca09457427d7a8a
   patches:
     - 0001-Remove-setup_requires.patch
+    - march.patch
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win]
 
@@ -22,7 +23,7 @@ requirements:
   host:
     - armadillo
     - cython
-    - lapack
+    - liblapack
     - nlopt
     - numpy
     - openblas
@@ -30,7 +31,7 @@ requirements:
     - python
   run:
     - armadillo
-    - lapack
+    - liblapack
     - nlopt
     - {{ pin_compatible('numpy') }}
     - openblas
