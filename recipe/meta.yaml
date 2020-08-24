@@ -1,5 +1,5 @@
 {% set name = "pgure-svt" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/tjof2/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 33da930fb15f1b7e7ede00f4f04eed0159612fe089d7ef7acca09457427d7a8a
+  sha256: 65158ca6b46bd3b4cf96123b513d1348df18c0277f5cc6946b227149a8b28401
   patches:
     - 0001-Remove-setup_requires.patch
     - march.patch
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win]
 
