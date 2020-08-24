@@ -1,5 +1,5 @@
 {% set name = "pgure-svt" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/tjof2/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 65158ca6b46bd3b4cf96123b513d1348df18c0277f5cc6946b227149a8b28401
+  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
   patches:
     - march.patch
 
