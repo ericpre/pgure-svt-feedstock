@@ -40,7 +40,7 @@ test:
   requires:
     - hyperspy-base
   imports:
-    - pguresvt.pguresvt
+    - pguresvt.svt
     - pguresvt.hspysvt
 
 about:
