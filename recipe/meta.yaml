@@ -41,7 +41,7 @@ test:
     - hyperspy-base
   imports:
     - pguresvt.svt
-    - pguresvt.hspysvt
+    - pguresvt.hspy
 
 about:
   home: https://github.com/tjof2/pgure-svt
