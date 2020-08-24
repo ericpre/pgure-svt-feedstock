@@ -1,5 +1,5 @@
 {% set name = "pgure-svt" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,12 @@ package:
 
 source:
   url: https://github.com/tjof2/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 33da930fb15f1b7e7ede00f4f04eed0159612fe089d7ef7acca09457427d7a8a
+  sha256: adaf5d9221759967ec403d55a8725119f5752f3e1f48cb38794948651de33fbb
   patches:
-    - 0001-Remove-setup_requires.patch
     - march.patch
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: true  # [win]
 
@@ -41,8 +40,8 @@ test:
   requires:
     - hyperspy-base
   imports:
-    - pguresvt.pguresvt
-    - pguresvt.hspysvt
+    - pguresvt.svt
+    - pguresvt.hspy
 
 about:
   home: https://github.com/tjof2/pgure-svt
