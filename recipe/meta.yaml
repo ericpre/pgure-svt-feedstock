@@ -9,7 +9,8 @@ source:
   url: https://github.com/tjof2/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: d53027013b04fbc11c73787152b5f4eaf500acf4793668bdda652d1022f636f3
   patches:
-    - march.patch
+    - march.patch  # [not win]
+    - 0001-Fix-flags-for-MSVC.patch  # [win]
 
 build:
   number: 0
