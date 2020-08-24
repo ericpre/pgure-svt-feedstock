@@ -9,7 +9,6 @@ source:
   url: https://github.com/tjof2/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 65158ca6b46bd3b4cf96123b513d1348df18c0277f5cc6946b227149a8b28401
   patches:
-    - 0001-Remove-setup_requires.patch
     - march.patch
 
 build:
