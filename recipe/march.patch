@@ -1,5 +1,5 @@
 diff --git a/setup.py b/setup.py
-index 598e8e7..5cd7a90 100644
+index 676beb6..d6f6ebf 100644
 --- a/setup.py
 +++ b/setup.py
 @@ -35,7 +35,6 @@ extensions = [
