@@ -5,9 +5,13 @@ Home: https://github.com/tjof2/pgure-svt
 
 Package license: GPL-3.0-or-later
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pgure-svt-feedstock/blob/master/LICENSE.txt)
 
 Summary: Singular value thresholding for denoising time-resolved microscopy
+
+Development: https://github.com/tjof2/pgure-svt
+
+Documentation: https://github.com/tjof2/pgure-svt
 
 PGURE-SVT (Poisson-Gaussian Unbiased Risk Estimator - Singular Value Thresholding) is an algorithm designed to denoise image sequences acquired in microscopy. It exploits the correlations between consecutive frames to form low-rank matrices, which are then recovered using a technique known as nuclear norm minimization. An unbiased risk estimator for mixed Poisson-Gaussian noise is used to automate the selection of the regularization parameter, while robust noise and motion estimation maintain broad applicability to many different types of microscopy.
 
