@@ -9,7 +9,6 @@ source:
   url: https://github.com/tjof2/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: d53027013b04fbc11c73787152b5f4eaf500acf4793668bdda652d1022f636f3
   patches:
-    - 0001-Remove-openblas-dependency-to-allow-using-mkl.patch
     - march.patch
 
 build:
