@@ -12,7 +12,7 @@ source:
     - march.patch
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . -vv
   skip: true  # [win]
 
@@ -32,7 +32,6 @@ requirements:
     - armadillo
     - liblapack
     - nlopt
-    - {{ pin_compatible('numpy') }}
     - python
 
 test:
