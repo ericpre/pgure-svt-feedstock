@@ -13,8 +13,7 @@ source:
 
 build:
   number: 9
-  script: {{ PYTHON }} -m pip install . -vv
-  skip: true  # [win]
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   build:
