@@ -36,8 +36,6 @@ requirements:
     - python
 
 test:
-  requires:
-    - hyperspy-base
   imports:
     - pguresvt.svt
     - pguresvt.hspy
